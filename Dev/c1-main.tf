@@ -13,3 +13,8 @@ provider "aws" {
   region = var.aws_reg
   profile = "default"
 }
+
+module "ec2-module" {
+  source = "../modules/ec2build"
+  
+}
