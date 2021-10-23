@@ -16,5 +16,8 @@ provider "aws" {
 
 module "ec2-module" {
   source = "../modules/ec2build"
+  aws_instance_type = var.aws_instance_type
+  vpc_cidr = var.vpc_cidr
+  vpc_public_subnets = var.vpc_public_subnets
   
 }
